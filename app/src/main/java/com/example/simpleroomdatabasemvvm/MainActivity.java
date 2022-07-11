@@ -1,0 +1,63 @@
+package com.example.simpleroomdatabasemvvm;
+
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+    private Button signupBtn;
+    private Button loginBtn;
+    private EditText username;
+    private EditText password;
+    private CustomerViewModel customerViewModel;
+    private Customer customer;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        customerViewModel = ViewModelProviders.of(this).get(CustomerViewModel.class);
+        signupBtn = findViewById(R.id.signupButton);
+        signupBtn.setOnClickListener((v) -> startActivity(new Intent(getApplicationContext(), SignupActivity.class)));
+
+        loginBtn = findViewById(R.id.loginButton);
+        loginBtn.setOnClickListener((v) -> {
+
+            username = findViewById(R.id.usernameLogin);
+            password = findViewById(R.id.passwordLogin);
+
+            new Thread(() -> {
+                customer = customerViewModel.login(username.getText().toString(), password.getText().toString());
+                if(customer == null){
+                    Toast.makeText(getApplicationContext(), "Invalid Username or Password", Toast.LENGTH_SHORT)
+                            .show();
+                }
+                else {
+                    SharedPreferences sharedPreferences = getSharedPreferences("popupPref", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("loginFinishPoint", customer.getUserName());
+                    editor.commit();
+
+                    startActivity(new Intent(getApplicationContext(), SubActivity.class)
+                            .putExtra("username", customer.getUserName()));
+                }
+            }).start();
+            Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT)
+                    .show();
+        });
+    }
+}
+
