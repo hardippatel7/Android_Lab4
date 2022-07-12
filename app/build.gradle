@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.simpleroomdatabasemvvm"
+        applicationId "com.group11.lab4"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CustomerActivity">
+    tools:context=".UpdateCustomerActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/customer_information"
+        android:text="@string/update_customer_information"
         android:textAlignment="center"
         android:textSize="25sp"/>
 
@@ -26,11 +26,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/first_name_text"/>
 
-        <TextView
-            android:id="@+id/firstNameView"
+        <EditText
+            android:id="@+id/firstNameUpdate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:hint="@string/first_name"/>
     </LinearLayout>
@@ -46,11 +45,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/last_name_text"/>
 
-        <TextView
-            android:id="@+id/lastNameView"
+        <EditText
+            android:id="@+id/lastNameUpdate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:hint="@string/last_name"/>
     </LinearLayout>
@@ -66,11 +64,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/username_text"/>
 
-        <TextView
-            android:id="@+id/usernameView"
+        <EditText
+            android:id="@+id/usernameUpdate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:hint="@string/username"/>
     </LinearLayout>
@@ -84,13 +81,31 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:text="@string/address_text"/>
+            android:text="@string/password_text"/>
+
+        <EditText
+            android:id="@+id/passwordUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:hint="@string/password"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/addressView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:text="@string/address_text"/>
+
+        <EditText
+            android:id="@+id/addressUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:hint="@string/address"/>
     </LinearLayout>
@@ -106,11 +121,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/city_text"/>
 
-        <TextView
-            android:id="@+id/cityView"
+        <EditText
+            android:id="@+id/cityUpdate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:hint="@string/city"/>
     </LinearLayout>
@@ -126,13 +140,20 @@
             android:layout_marginTop="20dp"
             android:text="@string/postal_code_text"/>
 
-        <TextView
-            android:id="@+id/postalCodeView"
+        <EditText
+            android:id="@+id/postalCodeUpdate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
-            android:hint="@string/postal_code"/>
+            android:hint="@string/postal_code"
+            />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/update"/>
 
 </LinearLayout>
