@@ -1,12 +1,12 @@
 package com.example.simpleroomdatabasemvvm;
 
 import android.arch.lifecycle.ViewModelProviders;
-import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.group11.lab4.R;
 
 public class CustomerActivity extends AppCompatActivity {
 

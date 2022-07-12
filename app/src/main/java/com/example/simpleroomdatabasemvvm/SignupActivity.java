@@ -2,11 +2,13 @@ package com.example.simpleroomdatabasemvvm;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.group11.lab4.R;
 
 public class SignupActivity extends AppCompatActivity {
     private CustomerViewModel customerViewModel;

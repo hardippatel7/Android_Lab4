@@ -1,9 +1,11 @@
 package com.example.simpleroomdatabasemvvm;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.group11.lab4.R;
 
 public class SubActivity extends AppCompatActivity {
 

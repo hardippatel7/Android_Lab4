@@ -1,7 +1,9 @@
 package com.example.simpleroomdatabasemvvm;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.group11.lab4.R;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,8 +1,8 @@
 package com.example.simpleroomdatabasemvvm;
 
+import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
-import android.arch.persistence.room.Database;
 import android.content.Context;
 //Room database class
 @Database(entities = {Customer.class}, version = 1)
