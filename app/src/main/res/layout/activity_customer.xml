@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/customerActivityBG"
     tools:context=".CustomerActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/customer_information"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textSize="25sp"/>
 
     <LinearLayout
@@ -24,6 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/first_name_text"/>
 
         <TextView
@@ -32,6 +37,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/first_name"/>
     </LinearLayout>
 
@@ -44,6 +51,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/last_name_text"/>
 
         <TextView
@@ -52,6 +62,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/last_name"/>
     </LinearLayout>
 
@@ -64,6 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/username_text"/>
 
         <TextView
@@ -72,6 +87,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/username"/>
     </LinearLayout>
 
@@ -84,6 +101,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/address_text"/>
 
         <TextView
@@ -92,6 +112,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/address"/>
     </LinearLayout>
 
@@ -104,6 +126,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/city_text"/>
 
         <TextView
@@ -112,6 +137,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/city"/>
     </LinearLayout>
 
@@ -124,6 +151,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:text="@string/postal_code_text"/>
 
         <TextView
@@ -132,6 +162,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
             android:hint="@string/postal_code"/>
     </LinearLayout>
 

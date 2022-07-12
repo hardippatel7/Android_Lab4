@@ -20,4 +20,6 @@
     <string name="update_customer_information">Update Customer Information</string>
     <string name="password_text">Password:</string>
     <string name="update">Update</string>
+    <string name="welcome_to_the_car_trader_app">Welcome to the Car Trader App</string>
+    <string name="login_to_explore_the_car_world">Login to explore the car world!!</string>
 </resources>
